@@ -1,3 +1,16 @@
-.l-input:invalid:not(:placeholder-shown):not(:focus) {border-color: #d22d2d !important;} // red
-.l-input:valid:not(:placeholder-shown):not(:focus) {border-color: #85b382 !important;} // green
-
+/* Validation in form */
+.l-registration .l-input:invalid:not(:placeholder-shown):not(:focus) {
+	border-color: #d22d2d !important;
+	background: url('img/red_check.png') no-repeat right 16px center;
+    -webkit-transition: border-color 230ms cubic-bezier(.215,.61,.855,1) !important;
+    -o-transition: border-color 230ms cubic-bezier(.215,.61,.855,1) !important;
+    transition: border-color 230ms cubic-bezier(.215,.61,.855,1) !important;
+}
+.l-registration .l-input:valid:not(:placeholder-shown):not(:focus):not([type="password"]) {
+	border-color: #85b382 !important;
+	background: url('img/green_check.png') no-repeat right 16px center;
+    -webkit-transition: border-color 500ms cubic-bezier(.215,.61,.855,1) !important;
+    -o-transition: border-color 500ms cubic-bezier(.215,.61,.855,1) !important;
+    transition: border-color 500ms cubic-bezier(.215,.61,.855,1) !important;
+}
+/* Validation in form */
